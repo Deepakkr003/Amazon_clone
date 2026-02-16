@@ -108,8 +108,7 @@ import { renderPaymentSummary } from './PaymentSummary.js';
         const productId = Link.dataset.productId;
         removeFromCart(productId);
 
-        const container = document.querySelector(`.js-cart-item-container-${productId}`);
-        container.remove();
+        renderOrderSummary();
 
         updateCartQuantity();
 
